@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Correspondence-Driven Trajectory Warping for Data-Efficient Imitation and Autonomous Play." />
+
+    <title>Correspondence-Driven Trajectory Warping for Data-Efficient Imitation and Autonomous Play</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/cmun.css"></link>
+
+    <base target="_blank">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span class="name">Tether</span>
+            <span class="title">Correspondence-Driven Trajectory Warping for Data-Efficient Imitation and Autonomous Play</span>
+        </h1>
+        <p class="publication">Supplemental for Conference on Neural Information Processing Systems (NeurIPS), 2025</p>
+    </header>
+
+    <section id="abstract">
+        <h2>Abstract</h2>
+        <p>Imitation learning has emerged as a promising paradigm for learning robotic manipulation policies, but leading methods require large, expensive datasets of human-collected demonstrations. Towards data-efficient imitation learning, we propose a novel non-parametric policy that produces useful behaviors from a few demonstrations. Given two-view images, it identifies semantic correspondences to anchor warps of demonstration trajectories into new real-world scenes. We show that this design is efficient and robust to significant variations in the spatial and semantic configuration of the scene, such as dramatic positional differences and out-of-distribution objects. As a result, the policy excels at a variety of manipulation tasks involving deformation, complex contacts, articulation, and precision, highlighting its flexibility and generality. In addition, we demonstrate how a bank of such policies can power autonomous multi-task play in the real world via a continuous cycle of task selection, execution, evaluation, and policy improvement, guided by vision-language models. This procedure generates an increasingly diverse demonstration dataset over time for each task, while minimizing the need for manual resets and human interventions. In a real household-like multi-object environment, our method is among the first to bootstrap many hours of diverse play from few demonstrations, autonomously producing hundreds of expert-level trajectories that could be used for downstream policy learning.</p>
+    </section>
+
+    <section id="media">
+        <h2>Media</h2>
+        <figure>
+            <video autoplay loop muted playsinline controls>
+                <source src="assets/timelapse.mp4" type="video/mp4">
+            </video>
+            <figcaption>Timelapse of a subsection of our 26-hour long autonomous play experiment. Video is sped up by 100x.</figcaption>
+        </figure>
+
+    </section>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
